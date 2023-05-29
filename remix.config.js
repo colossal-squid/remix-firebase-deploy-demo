@@ -6,6 +6,9 @@ module.exports = {
   // serverBuildPath: "build/index.js",
   // publicPath: "/build/",
   serverModuleFormat: "cjs",
+  serverDependenciesToBundle: [/.*/],
+  serverMinify: true,
+  serverBuildPath: "functions/build/remix_server.js",
   future: {
     v2_errorBoundary: true,
     v2_meta: true,
